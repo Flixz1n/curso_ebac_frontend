@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+section h2,
+section h3, 
+form button {
+    font-family: "roboto", cursive;
+    font-weight: normal;
+}
+
+header {
+    padding: 15px;
+    background-color: white;
+    color: black;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+header nav li a {
+    color: black;
+    text-decoration: none;
+}
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+section .inicio {
+    background-image: url(./imagens/TLOU.jpg);
+    background-color: #cccccc;
+    height: 900px;
+    background-position: center;
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+
+section .vison {
+    background-image: url(./imagens/background.jpg);
+    background-color: #cccccc;
+    height: 780px;
+    color: white;
+}
+
+
+.box {
+    text-align: justify;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    position: absolute;
+    top: 160%;
+    transform: translate(0, -160%);
+    padding: 10px;
+    left: 20%;
+}
+
+section .box {
+    font-weight: normal;
+    font-size: large;
+}
+
+section .game {
+    background-color: black;
+}
+
+.awards {
+    background-color: black;
+    color: #fff;
+}
+
+section .awards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .awards {
+    align-items: flex-start;
+}
+
+
+
