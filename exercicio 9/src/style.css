@@ -7,3 +7,7 @@
 body{
     text-align: center;
 }
+
+.tarefa-concluida {
+        text-decoration: line-through;
+}
