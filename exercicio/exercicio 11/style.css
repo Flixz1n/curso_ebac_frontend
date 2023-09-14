@@ -1,0 +1,141 @@
+*  {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    width: 1024px;
+    align-items: center;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    padding: 16px 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 56px;
+    background-color: blue;
+    color: white;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+section .container {
+    justify-content: flex-start;
+}
+
+section {
+    padding: 24px 0;
+    margin-bottom: 16px;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section {
+    color: #182C61;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+.front {
+    margin-right: 32px;
+}
+
+.produto img{
+    max-width: 100%;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 5%;
+    width: 1024px;
+}
+
+@media screen and (max-width:767px) {
+    .content-wrapper {
+        display: block;
+        align-items: center;
+    }
+
+    .conteudo {
+        display: block;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .conteudo {
+        display: block;
+    }
+
+    .conteudo .produto {
+        margin-bottom: 36px;
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .content-wrapper {
+        display: block;
+        align-items: center;
+    }
+
+    .content-wrapper p {
+        width: 70%;
+    }
+
+    .content-wrapper img {
+        width: 70%;
+    }
+
+    .conteudo {
+        grid-template-columns: repeat(2, 34.5%);
+        column-gap: 1%;
+        align-items: center;
+    }
+
+    
+}
