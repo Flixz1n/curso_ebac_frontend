@@ -54,27 +54,52 @@ section .container {
 
 section {
     padding: 24px 0;
-    margin-bottom: 16px;
 }
 
 section h2 {
     margin-bottom: 16px;
+    margin-left: 24px;
 }
 
 section {
     color: #182C61;
 }
 
-section p {
-    margin-bottom: 8px;
+section li {
+    list-style: none;
+    text-align: center;
+}
+
+section #sobre {
+    padding: 0;
+}
+
+section #produtos {
+    padding: 0;
+}
+
+button {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119750;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.btn {
+    width: 200px;
 }
 
 .front {
-    margin-right: 32px;
+    margin: auto 24px 16px;
 }
 
 .produto img{
-    max-width: 100%;
+    width: 200px;
 }
 
 .conteudo {
@@ -89,14 +114,28 @@ section p {
     .content-wrapper {
         display: block;
         align-items: center;
+        width: 100%;
+    }
+
+    #sobre p {
+        margin-left: 24px;
+    }
+
+    section {
+        margin: 16px
+    }
+
+    article {
+        display: flex;
     }
 
     .conteudo {
         display: block;
+        width: 100%;
     }
 
     .container {
-        max-width: 100%;
+        width: 100%;
     }
 
     .conteudo {
@@ -111,6 +150,13 @@ section p {
         flex-direction: column;
     }
 
+    .btn {
+        width: 100%;
+    }
+
+    .img-produto {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width: 1023px) {
@@ -120,14 +166,9 @@ section p {
 
     .content-wrapper {
         display: block;
-        align-items: center;
     }
 
     .content-wrapper p {
-        width: 70%;
-    }
-
-    .content-wrapper img {
         width: 70%;
     }
 
