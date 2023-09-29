@@ -1,0 +1,184 @@
+*  {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    width: 1024px;
+    align-items: start;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    padding: 16px;
+    border-bottom: 1px solid #ccc;
+    background-color: blue;
+    color: white;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+section .container {
+    justify-content: flex-start;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    margin-left: 24px;
+}
+
+section {
+    color: #182C61;
+}
+
+section li {
+    list-style: none;
+    text-align: center;
+}
+
+section #sobre {
+    padding: 0;
+}
+
+section #produtos {
+    padding: 0;
+}
+
+button {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119750;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.btn {
+    width: 200px;
+}
+
+.front {
+    margin: auto 24px 16px;
+}
+
+.produto img{
+    width: 200px;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 5%;
+    width: 1024px;
+}
+
+@media screen and (max-width:767px) {
+    .content-wrapper {
+        display: block;
+        align-items: center;
+        width: 100%;
+    }
+
+    #sobre p {
+        margin-left: 24px;
+    }
+
+    section {
+        margin: 16px
+    }
+
+    article {
+        display: flex;
+    }
+
+    .conteudo {
+        display: block;
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .conteudo {
+        display: block;
+    }
+
+    .conteudo .produto {
+        margin-bottom: 36px;
+    }
+
+    header .container {
+        
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .img-produto {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .container {
+        max-width: 1023px;
+        width: 100%;
+    }
+
+    .content-wrapper {
+        display: block;
+    }
+
+    .content-wrapper p {
+        width: 70%;
+    }
+
+    .conteudo {
+        grid-template-columns: repeat(2, 34.5%);
+        column-gap: 1%;
+        align-items: center;
+    }
+
+    section p{ 
+        margin-left: 24px;
+    }
+}
