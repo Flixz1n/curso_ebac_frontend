@@ -9,7 +9,7 @@ fetch(url)
     document.getElementById('followers').textContent = data.followers;
     document.getElementById('following').textContent = data.following;
     document.getElementById('repos').textContent = data.public_repos;
-    document.getElementById('link').href = profileUrl;
+    document.getElementById('link').href = data.html_url;
 })
 .catch(error => {
     console.error('Erro ao buscar dados:', error);
