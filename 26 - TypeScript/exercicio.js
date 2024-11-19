@@ -7,6 +7,6 @@ function saudar(nome) {
 }
 /////////////////////////////////////////////////////////
 const resultadoMultiplicacao = multiplicar(3, 5);
-console.log(resultadoMultiplicacao); // Saída: 15
+console.log(resultadoMultiplicacao);
 const saudacao = saudar("Maria");
 console.log(saudacao);
